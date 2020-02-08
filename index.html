@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>FitnessTracker</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+
+   
+  <nav class=" navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
+    <div id="menu" class="nav__icon">
+     <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+    </div>
+    
+      <div class="container">
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+    <ul class=" navbar-nav nav-flex-icons ml-auto">
+      <li class="menu__item"><a href="index.html" class="menu__link active">
+        <span>
+          <i class="fas fa-home"></i>
+          
+        </span>
+        Home</a></li>
+       <li class="menu__item"><a href="form.html" class="menu__link">
+         <span>
+        <i class="fas fa-info-circle"></i>
+         </span>
+         Place Appointment</a></li>
+         <li class="menu__item"><a href="thirdForm.htm" class="menu__link">
+          <span>
+         <i class="fas fa-info-circle"></i>
+          </span>
+          View Appointment</a></li>
+       <li class="menu__item"><a href="contact.html" class="menu__link">
+         <span>
+         <i class="fas fa-phone-volume"></i>
+        </span>
+         Contact us</a></li>
+    </ul>
+    <strong><img src="img/logo.png" height="100" width="100" class="d-inline-block align-top" alt=""></strong>
+ </div>
+
+      </div>
+ 
+  </nav>
+  <div class="menu">
+   
+    
+    <div class="menu__container">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="index.html" class="menu__link active">
+          <span>
+            <i class="fas fa-home"></i>
+            
+          </span>
+          Home</a></li>
+         <li class="menu__item"><a href="form.html" class="menu__link">
+           <span>
+          <i class="fas fa-info-circle"></i>
+           </span>
+           Place Appointment</a></li>
+           <li class="menu__item"><a href="thirdForm.htm" class="menu__link">
+            <span>
+           <i class="fas fa-info-circle"></i>
+            </span>
+            View Appointment</a></li>
+         <li class="menu__item"><a href="contact.html" class="menu__link">
+           <span>
+           <i class="fas fa-phone-volume"></i>
+          </span>
+           Contact us</a></li>
+      </ul>
+    </div>
+    <section class="view intro-2 ">
+      <div class="ml-5 mt-5 col-lg-9 offset-lg-3 col-sm-5 offset-sm-0">
+      
+          
+          <!-- Material form register -->
+          
+           <div class="card">
+              <div class="row justify-content-center">
+                <div class="card-body px-lg-4 pt-0">
+                  <h1 class="pra1"> Exercise & Fitness</h1>
+                  <p class="pra">Exercising regularly, every day if possible, is the single most important thing you can do for your health. In the short term, exercise helps to control appetite, boost mood, and improve sleep. In the long term, it reduces the risk of heart disease, stroke, diabetes, dementia, depression, and many cancers. The Centers for Disease Control and Prevention recommend the following:
+                  </p>
+                  <h1 class="pra1"> Adults Of All Ages</h1>
+                    <p class="pra">At least 150 minutes of moderate aerobic exercise like brisk walking or 75 minutes of rigorous exercise like running (or an equivalent mix of both) every week.  It’s fine to break up exercise into smaller sessions as long as each one lasts at least 10 minutes.
+                    Strength-training that works all major muscle groups—legs, hips, back, abdomen, chest, shoulders, and arms—at least two days a week.  Strength training may involve lifting weights, using resistance bands, or exercises like push-ups and sit-ups, in which your body weight furnishes the resistance.
+                    For pregnant women
+                    
+                    The guidelines for aerobic exercise are considered safe for most pregnant women. The CDC makes no recommendation for strength training. It’s a good idea to review your exercise plan with your doctor.
+                  </p>
+                   <h1 class="pra1"> For Children</h1>
+                    <p class="pra">At least 60 minutes of physical activity a day, most of which should be devoted to aerobic exercise. Children should do vigorous exercise and strength training, such as push-ups or gymnastics, on at least three days</p>
+                    
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Place Appointment</button>   
+                    
+                </div>
+              </div>
+           </div>
+           
+          </div>
+    </section>
+   
+  
+  
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>document.getElementById('menu').addEventListener('click',withSidebar);
+  document.getElementById('layer').addEventListener('click',withoutSidebar);
+  
+  function withSidebar(){
+    el=document.querySelector('.menu__container');
+    if(!el.classList.contains('slide-right') ){
+      el.classList.toggle('slide-right');}
+    else el.classList.toggle('slide-left');
+    document.querySelector('body').classList.toggle('with-sidebar');
+    console.log('hey');
+  }
+  function withoutSidebar(){
+    el=document.querySelector('.menu__container');
+    document.querySelector('body').classList.remove('with-sidebar');
+    el.classList.toggle('slide-left');
+    
+  }</script>
+  
+</body>
+</html>
